@@ -3,6 +3,9 @@ import gradio as gr
 import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers
+from huggingface_hub import hf_hub_download
+
+
 
 import os
 os.environ["TF_ENABLE_ONEDNN_OPTS"] = "0"
@@ -12,7 +15,16 @@ os.environ["TF_ENABLE_ONEDNN_OPTS"] = "0"
 IMG_SIZE = 224
 
 # Load your trained model
-model = keras.models.load_model("brain_tumor_classifier_tf.keras")
+# model = keras.models.load_model("brain_tumor_classifier_tf.keras")
+
+# Download model file from your HF model repo
+model_path = hf_hub_download(
+    repo_id="Janeworld/brain-tumor-mri-model",         # <-- your model repo ID
+    filename="brain_tumor_classifier_tf.keras",        # <-- exact filename there
+)
+
+# Load the Keras model
+model = keras.models.load_model(model_path)
 
 # IMPORTANT: use the same class order you had during training
 class_names = ['glioma', 'meningioma', 'notumor', 'pituitary']

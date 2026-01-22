@@ -1,6 +1,5 @@
 tensorflow
 gradio
 numpy
+huggingface_hub
 kagglehub
-tensorflow-hub
-
