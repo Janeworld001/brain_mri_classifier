@@ -1,5 +1,5 @@
 tensorflow
-gradio
+gradio==4.44.1
 numpy
 huggingface_hub
 kagglehub
