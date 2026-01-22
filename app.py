@@ -19,8 +19,8 @@ IMG_SIZE = 224
 
 # Download model file from your HF model repo
 model_path = hf_hub_download(
-    repo_id="Janeworld/brain-tumor-mri-model",         # <-- your model repo ID
-    filename="brain_tumor_classifier_tf.keras",        # <-- exact filename there
+    repo_id="https://huggingface.co/Janeworld/Janeworld_brain-tumor-mri-model/",        
+    filename="brain_tumor_classifier_tf.keras",       
 )
 
 # Load the Keras model
