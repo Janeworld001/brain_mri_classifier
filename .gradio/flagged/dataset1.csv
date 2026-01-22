@@ -1,0 +1,5 @@
+Upload MRI Image,Prediction,Class probabilities,timestamp
+.gradio\flagged\Upload MRI Image\69c5d01d717c4378ef63\image13.jpg,"Predicted: notumor (confidence: 38.19%)
+
+⚠️ This is a research/demo model only.
+It is NOT a medical device and must NOT be used for real diagnosis.","{""label"": ""notumor"", ""confidences"": [{""label"": ""notumor"", ""confidence"": 0.3818686902523041}, {""label"": ""glioma"", ""confidence"": 0.23159585893154144}, {""label"": ""meningioma"", ""confidence"": 0.19801963865756989}, {""label"": ""pituitary"", ""confidence"": 0.1885158270597458}]}",2026-01-22 12:48:24.870789
