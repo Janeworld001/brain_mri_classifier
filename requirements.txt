@@ -1,5 +1,6 @@
 tensorflow
-# gradio==4.44.1
+sdk: gradio
+sdk_version: "6.6.0"
 numpy
 huggingface_hub
 kagglehub
